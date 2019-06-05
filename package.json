@@ -2,7 +2,7 @@
   "name": "dev-isle",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/devisle/devisle.github.io",
+  "homepage": "https://devisle.github.io/",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "react": "^16.8.6",
