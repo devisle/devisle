@@ -1,0 +1,46 @@
+.MAIN {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #140046;
+  color: white;
+}
+
+.MAIN h1 {
+  font-size: 5rem;
+}
+
+.MAIN img {
+  border: 3px solid white;
+  border-radius: 15px;
+}
+
+.BUTTON1,
+.BUTTON2 {
+  margin: 30px 20px;
+  padding: 20px 40px;
+  border: 3px solid #140046;
+  border-radius: 20px;
+  background-color: #fff;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.BUTTON1:hover,
+.BUTTON2:hover {
+  background: #33ce85;
+  color: #140046;
+}
+
+a,
+a:active {
+  text-decoration: none;
+  color: #33ce85;
+  padding: 20px 40px;
+}
+
+a:hover {
+  color: #140046;
+}
