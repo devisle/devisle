@@ -6,7 +6,7 @@ const main = () => {
   return (
     <div
       style={{
-        position: "absolute",
+        // position: "absolute",
         top: 0,
         left: 0,
         width: "100%",
@@ -16,7 +16,7 @@ const main = () => {
       <Particles />
       <div
         style={{
-          position: "absolute",
+          // position: "absolute",
           top: 0,
           left: 0,
           width: "100%",
@@ -26,8 +26,8 @@ const main = () => {
         <div className={styles.Container}>
           <img
             src="https://avatars3.githubusercontent.com/u/48589214?s=200&v=4"
-            width="20"
-            height="20"
+            width="50"
+            height="50"
             alt="Dev Isle"
           />
           <span>Dev Isle</span>
@@ -40,8 +40,9 @@ const main = () => {
             help!
           </p>
           <div className={styles.BUTTON}>
-            <button className={styles.BUTTON1}>
+            <button>
               <a
+                className={styles.BUTTON1}
                 href="https://github.com/devisle"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -49,8 +50,9 @@ const main = () => {
                 GitHub Repo!
               </a>
             </button>
-            <button className={styles.BUTTON2}>
+            <button>
               <a
+                className={styles.BUTTON2}
                 href="https://discord.gg/hWHMT2c"
                 target="_blank"
                 rel="noopener noreferrer"

@@ -41,6 +41,8 @@ $themeMainColour: rgb(16, 166, 204);
   border-radius: 20px;
   background-color: #fff;
   font-size: 1.1rem;
+  padding: 10px 0px;
+  margin: 10px 15px;
 
   &:hover {
     background: $themeMainColour;
@@ -51,9 +53,10 @@ $themeMainColour: rgb(16, 166, 204);
     text-decoration: none;
     color: black;
     padding: 20px 40px;
+    width: 100%;
 
-    &::hover {
-      color: $themeMainColour;
+    &:hover {
+      color: #fff;
     }
   }
 }
