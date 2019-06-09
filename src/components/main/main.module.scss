@@ -1,50 +1,51 @@
-.MAIN {
+.Container {
   position: absolute;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-
-  color: white;
+  padding-left: 100px;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vh;
+  height: 100vh;
 }
 
-.MAIN h1 {
+.Container h1 {
+  text-align: left;
   font-size: 5rem;
   font-family: Arial, Helvetica, sans-serif;
   color: rgb(16, 166, 204);
 }
 
-.MAIN p {
+.Container span {
+  color: black;
+}
+
+.Container p {
   color: black;
   text-align: left;
   width: 50%;
 }
 
-.MAIN img {
+.Container img {
   border: 3px solid white;
   border-radius: 15px;
 }
 
-.BUTTON1,
-.BUTTON2 {
-  margin: 30px 20px;
+.Container button {
   padding: 20px 40px;
   border: 3px solid #140046;
   border-radius: 20px;
   background-color: #fff;
   font-size: 1.5rem;
   font-weight: 800;
-}
 
-.BUTTON1:hover,
-.BUTTON2:hover {
-  background: #33ce85;
-  color: #140046;
+  &:hover {
+    background: #33ce85;
+    color: #140046;
+  }
 }
 
 a,

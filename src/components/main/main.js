@@ -1,6 +1,6 @@
 import React from "react";
 import Particles from "./particles";
-import classes from "./main.module.scss";
+import styles from "./main.module.scss";
 
 const main = () => {
   return (
@@ -23,15 +23,15 @@ const main = () => {
           height: "100%"
         }}
       >
-        <div className={classes.MAIN}>
+        <div className={styles.Container}>
           <img
             src="https://avatars3.githubusercontent.com/u/48589214?s=200&v=4"
-            width="200"
-            height="200"
+            width="20"
+            height="20"
             alt="Dev Isle"
           />
-          <br />
-          <h1>Welcome to dev isle!</h1>
+          <span>Dev Isle</span>
+          <h1>Welcome to Dev Isle!</h1>
           <h2> Open Source </h2>
           <p>
             We’re a chat community Javascript, C++, Python and many more lang
@@ -39,8 +39,8 @@ const main = () => {
             community and learn more. Come have a tech related chat or ask for
             help!
           </p>
-          <div className={classes.BUTTON}>
-            <button className={classes.BUTTON1}>
+          <div className={styles.BUTTON}>
+            <button className={styles.BUTTON1}>
               <a
                 href="https://github.com/devisle"
                 target="_blank"
@@ -49,7 +49,7 @@ const main = () => {
                 GitHub Repo!
               </a>
             </button>
-            <button className={classes.BUTTON2}>
+            <button className={styles.BUTTON2}>
               <a
                 href="https://discord.gg/hWHMT2c"
                 target="_blank"
