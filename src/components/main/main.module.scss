@@ -38,3 +38,41 @@ $themeMainColour: rgb(16, 166, 204);
     width: 50%;
   }
 }
+
+@media all and (min-width: 481px) and (max-width: 979px) {
+  .Container {
+    padding: 40px;
+
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+      width: 100%;
+    }
+  }
+}
+
+@media all and (max-width: 480px) {
+  .Container {
+    padding: 20px;
+
+    h1 {
+      font-size: 1.5rem;
+    }
+
+    h2 {
+      font-size: 1rem;
+    }
+
+    p {
+      font-size: 0.7rem;
+      width: 100%;
+    }
+  }
+}

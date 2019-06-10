@@ -27,3 +27,33 @@ button {
     }
   }
 }
+
+@media all and (min-width: 481px) and (max-width: 979px) {
+  button {
+    border: 1px solid #00000027;
+    border-radius: 20px;
+    background-color: #fff;
+    font-size: 1.0rem;
+    padding: 5px 0px;
+
+    a,
+    a:active {
+      padding: 20px 40px;
+    }
+  }
+}
+
+@media all and (max-width: 480px) {
+  button {
+    border: 1px solid #00000027;
+    border-radius: 20px;
+    background-color: #fff;
+    font-size: 0.8rem;
+    padding: 5px 0px;
+
+    a,
+    a:active {
+      padding: 10px 20px;
+    }
+  }
+}

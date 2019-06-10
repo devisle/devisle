@@ -19,3 +19,26 @@
     }
   }
 }
+
+
+@media all and (min-width: 481px) and (max-width: 979px) {
+  .Footer {
+    span {
+      &:first-child {
+        padding-left: 40px;
+        padding-right: 5px;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 480px) {
+  .Footer {
+    span {
+      &:first-child {
+        padding-left: 20px;
+        padding-right: 5px;
+      }
+    }
+  }
+}
