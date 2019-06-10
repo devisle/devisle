@@ -3,7 +3,7 @@ import "./App.css";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
-import Main from "./components/main/main";
+import Main from "./components/Main";
 import Rules from "./components/DevIsleRules/DevIsleRules";
 import Schedule from "./components/Schedule/Schedule";
 import Projects from "./components/Projects/Project";
