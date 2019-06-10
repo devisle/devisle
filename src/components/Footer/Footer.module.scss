@@ -1,15 +1,21 @@
 .Footer {
+  position: absolute;
+  bottom: 0;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
   position: absolute;
   width: 100%;
-  height: 10vh;
-  background: red;
+  height: 8vh;
+  background: rgb(59, 59, 59);
 
   span {
-    padding-left: 100px;
-    color: black;
+    color: white;
+
+    &:first-child {
+      padding-left: 100px;
+      padding-right: 5px;
+    }
   }
 }

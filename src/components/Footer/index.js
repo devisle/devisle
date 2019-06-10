@@ -4,7 +4,11 @@ import styles from "./Footer.module.scss";
 const Footer = () => {
   return (
     <div className={styles.Footer}>
-      <span>Made with love by Dev Isle</span>
+      <span>Made with</span>
+      <span role="img" aria-label="heart">
+        ❤️
+      </span>
+      <span>by Dev Isle developers</span>
     </div>
   );
 };
