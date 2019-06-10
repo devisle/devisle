@@ -14,6 +14,7 @@ const main = () => (
         the world and take some wisdoms. Come have a tech related chat or simply
         feel free to ask for help!
       </p>
+      <p>If you would like to contribute to Open Source content, let one of the server admins know. Thanks in advance.</p>
       <div className={styles.BUTTON}>
         <button>
           <a
