@@ -10,12 +10,15 @@
   height: 8vh;
   background: rgb(59, 59, 59);
 
+  .Heart {
+    padding: 0px 5px 0px 10px;
+  }
+
   span {
     color: white;
 
     &:first-child {
       padding-left: 100px;
-      padding-right: 5px;
     }
   }
 }
@@ -26,7 +29,6 @@
     span {
       &:first-child {
         padding-left: 40px;
-        padding-right: 5px;
       }
     }
   }
@@ -37,7 +39,6 @@
     span {
       &:first-child {
         padding-left: 20px;
-        padding-right: 5px;
       }
     }
   }

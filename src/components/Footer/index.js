@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div className={styles.Footer}>
       <span>Made with</span>
-      <span role="img" aria-label="heart">
+      <span className={styles.Heart} role="img" aria-label="heart">
         ❤️
       </span>
       <span>by Dev Isle developers</span>
