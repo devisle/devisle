@@ -1,0 +1,15 @@
+.Footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 10vh;
+  background: red;
+
+  span {
+    padding-left: 100px;
+    color: black;
+  }
+}

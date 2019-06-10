@@ -1,6 +1,6 @@
 import React from "react";
 
-const devIsleRules = () => {
+const Rules = () => {
   return (
     <div>
       <h2>DevsIsle Rules</h2>
@@ -8,4 +8,4 @@ const devIsleRules = () => {
   );
 };
 
-export default devIsleRules;
+export default Rules;
