@@ -25,7 +25,7 @@ const Rules = () => (
       <p>e) Don’t direct users to pirated materials.</p>
       
       <h4>1.1 Above and beyond</h4>
-      
+       
       <p>a) Be welcoming to new joiners. </p>
       <p>b) Tell the moderators when somebody has been going above and beyond—help us identify MVPs. </p>
       <p>c) Report spammers and unwelcoming behavior to moderators
