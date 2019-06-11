@@ -3,7 +3,8 @@ import Particles from "react-particles-js";
 
 export default () => (
   <Particles
-    width={'100%'} height={'100vh'}
+    width={"100%"}
+    height={"80vh"}
     params={{
       particles: {
         number: {
