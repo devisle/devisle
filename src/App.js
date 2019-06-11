@@ -2,8 +2,6 @@ import React from "react";
 import "./App.css";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
 import Main from "./components/Main";
 import Rules from "./components/Rules";
 import Schedule from "./components/Schedule";
@@ -14,13 +12,11 @@ function App() {
   return (
     <Router>
       <div className="App">
-        {/* <Navbar /> */}
-        <Route exact path="/devisle" component={Main} />
-        <Route exact path="/rules" component={Rules} />
-        <Route exact path="/contributors" component={Contributors} />
-        <Route exact path="/schedule" component={Schedule} />
-        <Route exact path="/projects" component={Projects} />
-        {/* <Footer /> */}
+        <Route path="/devisle" component={Main} />
+        <Route path="/rules" component={Rules} />
+        <Route path="/contributors" component={Contributors} />
+        <Route path="/schedule" component={Schedule} />
+        <Route path="/projects" component={Projects} />
       </div>
     </Router>
   );

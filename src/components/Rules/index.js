@@ -31,7 +31,7 @@ const Rules = () => (
       <p>c) Report spammers and unwelcoming behavior to moderators
       and admins. </p>
       <p>d) Answer more questions than you ask. </p>
-      <p>e) Treat our female developers with respect. </p>
+      <p>e) Treat all developers with respect, regardless their orientation. </p>
       <p>f) Treat our young joiners with respect and patience. </p>
 
       <h3>2. Moderators, All of the above, and: </h3>
