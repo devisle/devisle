@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import { BrowserRouter as Router, Route, Redirect } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import Main from "./components/Main";
 import Rules from "./components/Rules";
@@ -12,8 +12,7 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Route path="/" component={Main} />
-        <Route path="/devisle" render={() => <Redirect to="/" />} />
+        <Route path="/devisle" component={Main} />
         <Route path="/rules" component={Rules} />
         <Route path="/contributors" component={Contributors} />
         <Route path="/schedule" component={Schedule} />
