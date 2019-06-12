@@ -12,8 +12,8 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Route exact path="/devisle" render={() => <Redirect to="/" />} />
         <Route path="/" component={Main} />
+        <Route path="/devisle" render={() => <Redirect to="/" />} />
         <Route path="/rules" component={Rules} />
         <Route path="/contributors" component={Contributors} />
         <Route path="/schedule" component={Schedule} />
