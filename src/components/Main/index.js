@@ -1,10 +1,13 @@
 import React from "react";
+import Navbar from "../Navbar";
+import Footer from "../Footer";
 import Particles from "../Particles";
 import Button from "../Button";
 import styles from "./main.module.scss";
 
 const main = () => (
   <>
+    <Navbar />
     <Particles />
     <div className={styles.Container}>
       <h1>Welcome to Dev Isle!</h1>
@@ -30,6 +33,7 @@ const main = () => (
         <Button url={"https://discord.gg/hWHMT2c"} title={"Discord Server"} />
       </div>
     </div>
+    <Footer />
   </>
 );
 
