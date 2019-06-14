@@ -9,7 +9,7 @@ const Navbar = () => (
         src="https://avatars3.githubusercontent.com/u/48589214?s=200&v=4"
         alt="Dev Isle"
       />
-      <Link className={styles.logoLink} to="/devisle">
+      <Link className={styles.logoLink} to="/">
         Dev Isle
       </Link>
     </div>
