@@ -30,7 +30,7 @@ const main = () => (
           url={"https://github.com/devisle"}
           title={"Github Organization"}
         />
-        <Button url={"https://discord.gg/hWHMT2c"} title={"Discord Server"} />
+        <Button url={"https://discord.gg/pW7BztY"} title={"Discord Server"} />
       </div>
     </div>
     <Footer />
