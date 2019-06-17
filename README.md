@@ -2,9 +2,9 @@
 
 The website is hosted on netlify at https://devisle.netlify.com/
 
-It is securely hosted under Natedeploys netlify account.
+It is securely hosted under Natedeploys netlify account, pushing to the master branch will begin deployment on netlify. Therefore please follow the contribution steps below.
 
-### Contributing
+### Contribution
 
 You will need collaborator access provided by an admin. Only developers who are trusted will be given access by the admins.
 
