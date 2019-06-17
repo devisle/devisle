@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import { HashRouter, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import Main from "./components/Main";
 import Rules from "./components/Rules";
@@ -10,7 +10,7 @@ import Contributors from "./components/Contributors";
 
 function App() {
   return (
-    <HashRouter basename="/">
+    <Router>
       <div className="App">
         <Route exact path="/" component={Main} />
         <Route path="/rules" component={Rules} />
@@ -18,7 +18,7 @@ function App() {
         <Route path="/schedule" component={Schedule} />
         <Route path="/projects" component={Projects} />
       </div>
-    </HashRouter>
+    </Router>
   );
 }
 
