@@ -2,7 +2,7 @@
   "name": "dev-isle",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://devisle.github.io/devisle/",
+  "homepage": "https://devisle.netlify.com/",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "node-sass": "^4.12.0",
