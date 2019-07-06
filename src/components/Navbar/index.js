@@ -25,17 +25,17 @@ const Navbar = () => (
             <NavLink to="/contributors" activeStyle={{ color: "#65e0ff" }}>
               Contributors
             </NavLink>
-          </li> */}
-          {/* <li>
+          </li>
+          <li>
             <NavLink to="/schedule" activeStyle={{ color: "#65e0ff" }}>
               Schedule
             </NavLink>
-          </li>
+          </li> */}
           <li>
             <NavLink to="/projects" activeStyle={{ color: "#65e0ff" }}>
               Projects
             </NavLink>
-          </li> */}
+          </li>
         </ul>
       </nav>
     </div>

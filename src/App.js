@@ -16,7 +16,7 @@ function App() {
         <Route path="/rules" component={Rules} />
         {/* <Route path="/contributors" component={Contributors} /> */}
         {/* <Route path="/schedule" component={Schedule} /> */}
-        {/* <Route path="/projects" component={Projects} /> */}
+        <Route path="/projects" component={Projects} />
       </div>
     </Router>
   );
