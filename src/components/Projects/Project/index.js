@@ -29,6 +29,7 @@ class Project extends Component {
               <li>
                 <a
                   target="_blank"
+                  rel="noopener noreferrer"
                   href={`https://www.github.com/${contributor.login}`}
                 >
                   {contributor.login}
@@ -38,7 +39,9 @@ class Project extends Component {
           })}
         </ul>
         <h4>Stars: {this.props.stars}</h4>
-        <a href={this.props.github}>GitHub Link</a>
+        <a class={classes.Link} href={this.props.github}>
+          GitHub Link
+        </a>
       </div>
     );
   }

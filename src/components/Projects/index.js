@@ -1,9 +1,10 @@
-import React, { Component } from "react";
+import React, { Component, Suspense } from "react";
 import Navbar from "../Navbar/index";
 import Footer from "../Footer/index";
-import Project from "./Project/index";
-
 import classes from "./index.module.scss";
+// import Project from "./Project/index";
+
+const Project = React.lazy(() => import("./Project/index"));
 class project extends Component {
   state = {
     projects: []
@@ -36,7 +37,9 @@ class project extends Component {
     return (
       <div>
         <Navbar />
-        <div className={classes.Projects}>{projectArray}</div>
+        <Suspense fallback={<div>Loading...</div>}>
+          <div className={classes.Projects}>{projectArray}</div>
+        </Suspense>
         <Footer />
       </div>
     );

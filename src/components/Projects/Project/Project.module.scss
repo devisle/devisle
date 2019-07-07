@@ -42,14 +42,26 @@ $themeMainColour: rgb(16, 166, 204);
   }
 }
 
+.Link {
+  padding: 5px 10px;
+  border: 2px solid #000;
+  border-radius: 20px;
+
+  &:hover {
+    border: 2px solid $themeMainColour;
+  }
+}
+
 @media all and (min-width: 481px) and (max-width: 979px) {
-  .Rules {
-    padding: 20px 40px 40px 20px;
+  .Project {
+    padding: 20px 40px;
+    font-size: 1rem;
   }
 }
 
 @media all and (max-width: 480px) {
-  .Rules {
-    padding: 20px 40px 40px 20px;
+  .Project {
+    padding: 20px 40px;
+    font-size: 0.9rem;
   }
 }
