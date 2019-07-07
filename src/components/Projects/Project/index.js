@@ -39,7 +39,7 @@ class Project extends Component {
           })}
         </ul>
         <h4>Stars: {this.props.stars}</h4>
-        <a class={classes.Link} href={this.props.github}>
+        <a className={classes.Link} href={this.props.github}>
           GitHub Link
         </a>
       </div>

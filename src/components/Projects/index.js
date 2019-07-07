@@ -2,9 +2,7 @@ import React, { Component, Suspense } from "react";
 import Navbar from "../Navbar/index";
 import Footer from "../Footer/index";
 import classes from "./index.module.scss";
-// import Project from "./Project/index";
-
-const Project = React.lazy(() => import("./Project/index"));
+import Project from "./Project/index";
 class project extends Component {
   state = {
     projects: []
@@ -23,6 +21,7 @@ class project extends Component {
       if (project.fork === false) {
         return (
           <Project
+            key={project.id}
             id={project.id}
             name={project.name}
             description={project.description}
@@ -37,9 +36,7 @@ class project extends Component {
     return (
       <div>
         <Navbar />
-        <Suspense fallback={<div>Loading...</div>}>
-          <div className={classes.Projects}>{projectArray}</div>
-        </Suspense>
+        <div className={classes.Projects}>{projectArray}</div>
         <Footer />
       </div>
     );
