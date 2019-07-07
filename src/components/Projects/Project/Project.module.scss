@@ -1,14 +1,19 @@
-.Rules {
-  overflow: hidden;
-  padding: 20px 40px 40px 100px;
+$themeMainColour: rgb(16, 166, 204);
+.Project {
+  border: 3px solid #000;
+  border-radius: 10px;
+  margin: 10px 15px;
+  padding: 20px 40px;
   font-size: 1.2rem;
-  text-align: left;
-  overflow-y: scroll;
-  min-width: 100px;
+  text-align: justify;
+  width: 500px;
+  min-height: 400px;
 
   h3 {
     margin-top: 20px;
     margin-bottom: 20px;
+    border-bottom: 2px solid #000;
+    color: $themeMainColour;
   }
 
   h4 {
@@ -18,5 +23,33 @@
 
   p  {
     padding: 20px 0px 20px 0px;
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  li {
+    padding: 0 10px;
+  }
+  a:active,
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+  a:hover {
+    color: $themeMainColour;
+  }
+}
+
+@media all and (min-width: 481px) and (max-width: 979px) {
+  .Rules {
+    padding: 20px 40px 40px 20px;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .Rules {
+    padding: 20px 40px 40px 20px;
   }
 }
