@@ -26,7 +26,7 @@ class Project extends Component {
         <ul>
           {this.state.contributors.map(contributor => {
             return (
-              <li>
+              <li key={contributor.login}>
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
@@ -38,9 +38,9 @@ class Project extends Component {
             );
           })}
         </ul>
-        <h4>Stars: {this.props.stars}</h4>
+        <h4>Star(s): {this.props.stars}</h4>
         <a className={classes.Link} href={this.props.github}>
-          GitHub Link
+          GitHub Repo
         </a>
       </div>
     );
