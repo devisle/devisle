@@ -23,6 +23,9 @@ class project extends Component {
           id={project.id}
           name={project.name}
           description={project.description}
+          stars={project.stargazers_count}
+          languages={project.language}
+          github={project.svn_url}
         />
       );
     });
