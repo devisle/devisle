@@ -77,7 +77,6 @@ class Project extends Component {
             {this.props.license.name}
           </h5>
         ) : null}
-        {/* <h4>License: {this.props.license}</h4> */}
         <a className={classes.Link} href={this.props.github}>
           <Octicon icon={MarkGithub} size="medium" verticalAlign="middle" /> |
           GitHub Repo
