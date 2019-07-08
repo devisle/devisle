@@ -33,7 +33,6 @@ class Project extends Component {
       });
     });
   render() {
-    console.log(this.props.license);
     let languagesArray = Object.keys(this.state.languages);
     return (
       <div id={this.props.id} className={classes.Project}>
