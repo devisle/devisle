@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://devisle.netlify.com/",
   "dependencies": {
+    "@primer/octicons-react": "^9.1.1",
     "gh-pages": "^2.0.1",
     "node-sass": "^4.12.0",
     "react": "^16.8.6",
