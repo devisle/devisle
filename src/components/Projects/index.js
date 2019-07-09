@@ -18,21 +18,20 @@ class project extends Component {
   render() {
     let projectArray;
     projectArray = this.state.projects.map(project => {
-      if (project.fork === false) {
-        return (
-          <Project
-            key={project.id}
-            id={project.id}
-            name={project.name}
-            description={project.description}
-            stars={project.stargazers_count}
-            languages={project.languages_url}
-            github={project.svn_url}
-            contributors={project.contributors_url}
-            license={project.license}
-          />
-        );
-      }
+      return project.fork === false ? (
+        <Project
+          key={project.id}
+          id={project.id}
+          name={project.name}
+          description={project.description}
+          stars={project.stargazers_count}
+          forks={project.forks_count}
+          languages={project.languages_url}
+          github={project.svn_url}
+          contributors={project.contributors_url}
+          license={project.license}
+        />
+      ) : null;
     });
     return (
       <div>

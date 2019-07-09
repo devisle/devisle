@@ -5,7 +5,8 @@ import Octicon, {
   MarkGithub,
   Organization,
   Globe,
-  Law
+  Law,
+  RepoForked
 } from "@primer/octicons-react";
 
 class Project extends Component {
@@ -66,6 +67,12 @@ class Project extends Component {
             );
           })}
         </ul>
+        {this.props.forks !== null ? (
+          <h5>
+            <Octicon icon={RepoForked} size="medium" verticalAlign="middle" />{" "}
+            {this.props.forks}
+          </h5>
+        ) : null}
         <h4>
           <Octicon icon={Star} size="medium" verticalAlign="middle" /> Star(s):{" "}
           {this.props.stars}
