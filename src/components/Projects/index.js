@@ -3,10 +3,12 @@ import Navbar from "../Navbar/index";
 import Footer from "../Footer/index";
 import classes from "./index.module.scss";
 import Project from "./Project/index";
+
 class project extends Component {
   state = {
     projects: []
   };
+
   appData = fetch("https://api.github.com/orgs/devisle/repos")
     .then(res => res.json())
     .then(data => {
@@ -15,6 +17,7 @@ class project extends Component {
         projects
       });
     });
+
   render() {
     let projectArray;
     projectArray = this.state.projects.map(project => {

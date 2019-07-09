@@ -1,11 +1,21 @@
 .navigation {
   padding: 0px 80px 0px 80px;
-  height: 10vh;
+  height: 7vh;
   display: flex;
   flex-wrap: wrap;
   width: 100%;
   align-items: center;
-  background: rgb(59, 59, 59);
+  background: #000000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #434343,
+    #000000
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #434343,
+    #000000
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   .navigationLeft {
     display: flex;
@@ -22,7 +32,7 @@
 
     a {
       position: relative;
-      z-index: 9999;  
+      z-index: 9999;
       color: white;
       text-decoration: none;
       padding-left: 20px;
@@ -75,9 +85,8 @@
   }
 }
 
-
 @media all and (min-width: 481px) and (max-width: 979px) {
-.navigation {
+  .navigation {
     padding: 0px 5px 0px 5px;
 
     .navigationLeft {
@@ -92,7 +101,6 @@
     }
 
     ul {
-      
       font-size: 0.8rem;
 
       li {
