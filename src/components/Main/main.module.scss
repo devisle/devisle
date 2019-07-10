@@ -54,6 +54,26 @@ $themeMainColour: rgb(16, 166, 204);
 @media all and (min-width: 481px) and (max-width: 979px) {
   .Container {
     padding: 40px;
+    flex-direction: column;
+
+    section {
+      width: 100%;
+
+      iframe {
+        height: 250px;
+        width: 100%;
+        margin-left: 0px;
+      }
+    }
+
+    .Links {
+      margin-bottom: 20px;
+
+      button {
+        font-size: 12px;
+        height: 30px;
+      }
+    }
 
     h1 {
       font-size: 2.5rem;
@@ -61,6 +81,7 @@ $themeMainColour: rgb(16, 166, 204);
 
     h2 {
       font-size: 1.4rem;
+      margin-bottom: 10px;
     }
 
     p {
@@ -72,14 +93,36 @@ $themeMainColour: rgb(16, 166, 204);
 
 @media all and (max-width: 480px) {
   .Container {
+    flex-direction: column;
     padding: 20px;
 
+    section {
+      width: 100%;
+
+      iframe {
+        height: 150px;
+        width: 100%;
+        margin-left: 0px;
+      }
+    }
+
+    .Links {
+      font-size: 7px;
+      margin-bottom: 10px;
+
+      button {
+        font-size: 7px;
+        height: 30px;
+      }
+    }
+
     h1 {
-      font-size: 1.5rem;
+      font-size: 1rem;
     }
 
     h2 {
-      font-size: 1rem;
+      font-size: 0.8rem;
+      margin-bottom: 10px;
     }
 
     p {
