@@ -24,16 +24,23 @@
   }
 
   section {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
     color: white;
     padding: 0px 100px;
+    height: 100%;
 
     a {
-      text-decoration: none;
-
       i {
-        height: 50px;
-        width: 50px;
         margin: 0 20px;
+
+        svg {
+          height: 20px;
+          width: 20px;
+        }
+
         color: white;
       }
     }
