@@ -22,21 +22,21 @@ const Footer = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Icon size={32} icon={youtubePlay} />
+          <Icon icon={youtubePlay} />
         </a>
         <a
           href="https://twitter.com/devisle"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Icon size={32} icon={twitterSquare} />
+          <Icon icon={twitterSquare} />
         </a>
         <a
           href="https://instagram.com/dev_isle/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Icon size={32} icon={instagram} />
+          <Icon icon={instagram} />
         </a>
       </section>
     </div>
