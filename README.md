@@ -19,3 +19,7 @@ You will need collaborator access provided by an admin. Only developers who are 
 ### Discord Channel
 
 All questions and discussions should be raised on the discord channel: #devisle-site-developers
+
+## License
+
+The source code is released under the [MIT License](https://github.com/devisle/devisle/blob/master/LICENSE).
