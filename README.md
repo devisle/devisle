@@ -20,7 +20,7 @@ You will need collaborator access provided by an admin. Only developers who are 
 
 All questions and discussions should be raised on the discord channel: #devisle-open-source
 
-[Our discord channel}(https://discord.gg/MSTQKRE)
+[Our discord channel](https://discord.gg/MSTQKRE)
 
 ## License
 
