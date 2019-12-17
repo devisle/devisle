@@ -2,19 +2,27 @@
 
 The website is hosted on netlify at https://devisle.netlify.com/
 
-It is securely hosted under Natedeploys netlify account, pushing to the master branch will begin deployment on netlify. Therefore please follow the contribution steps below.
+It is securely hosted under Natedeploys netlify account, pushing to the master branch will begin deployment on netlify. Therefore please follow the [contribution](https://github.com/devisle/devisle/blob/master/CONTRIBUTING.md) guidelines.
 
-### Contribution
+## Running locally
 
-You will need collaborator access provided by an admin. Only developers who are trusted will be given access by the admins.
+Clone this repository:
 
-1. Git clone the repository.
-2. Within the clone, create a new branch.
-3. Push your branch and submit a PR request.
-4. Await for your PR to be approved.
-5. Once your code is reviewed and approved, delete your branch, locally and on the github repository.
-6. On your local clone, switch to master branch and git pull the latest copy with the changes.
-7. Repeat for any additional features.
+```shell
+git clone https://github.com/devisle/devisle.git
+```
+
+Install dependencies:
+
+```shell
+npm i or npm install
+```
+
+Starting the development server:
+
+```shell
+npm run start
+```
 
 ### Discord Channel
 
