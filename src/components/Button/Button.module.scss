@@ -50,16 +50,10 @@ button {
     background-color: #fff;
     padding: 5px 0px;
     font-size: 12px;
-    align-items: center;
-    justify-content: center;
 
     a,
     a:active {
       padding: 10px 20px;
     }
-  }
-  button:first-child {
-    margin-right: 10px;
-    margin-left: 10px;
   }
 }
