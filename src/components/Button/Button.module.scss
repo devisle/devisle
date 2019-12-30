@@ -48,12 +48,18 @@ button {
     border: 1px solid #00000027;
     border-radius: 20px;
     background-color: #fff;
-    font-size: 0.8rem;
     padding: 5px 0px;
+    font-size: 12px;
+    align-items: center;
+    justify-content: center;
 
     a,
     a:active {
       padding: 10px 20px;
     }
+  }
+  button:first-child {
+    margin-right: 10px;
+    margin-left: 10px;
   }
 }
