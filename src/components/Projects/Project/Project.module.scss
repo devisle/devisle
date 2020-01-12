@@ -1,38 +1,33 @@
 $themeMainColour: rgb(16, 166, 204);
 $themeMainColourDarker: rgb(8, 87, 107);
+
 .Project {
   border: 1px solid #00000027;
   border-radius: 10px;
-  margin: 10px 15px;
+  margin: 30px 0px;
   padding: 20px 40px;
-  font-size: 1.2rem;
+  font-size: 12px;
   width: 500px;
-  min-height: 400px;
+  height: auto;
 
-  h3 {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border-bottom: 1px solid #00000027;
-    color: $themeMainColour;
-  }
-
-  h4 {
-    margin-bottom: 20px;
-    margin-top: 20px;
-  }
-
+  a,
+  p,
+  h4,
   h5 {
-    margin-bottom: 20px;
-    margin-top: 20px;
-  }
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10px 0px;
 
-  p  {
-    padding: 20px 0px 20px 0px;
+    svg {
+      margin-right: 5px;
+    }
   }
 
   ul {
     display: flex;
     flex-wrap: wrap;
+    list-style: none;
   }
   li {
     padding: 0 10px;
@@ -40,15 +35,15 @@ $themeMainColourDarker: rgb(8, 87, 107);
   a:active,
   a {
     text-decoration: none;
-    color: #000;
+    color: $themeMainColour;
   }
   a:hover {
-    color: $themeMainColour;
+    color: black;
   }
 }
 
 .Link {
-  padding: 10px 10px;
+  // padding: 10px 10px;
   border: 1px solid #00000027;
   border-radius: 20px;
   color: #fff !important;

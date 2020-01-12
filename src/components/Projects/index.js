@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-import Navbar from "../Navbar/index";
-import Footer from "../Footer/index";
 import classes from "./index.module.scss";
 import Project from "./Project/index";
 
@@ -37,10 +35,9 @@ class project extends Component {
       ) : null;
     });
     return (
-      <div>
-        <Navbar />
+      <div className={classes.Container}>
+        <h3>Projects</h3>
         <div className={classes.Projects}>{projectArray}</div>
-        <Footer />
       </div>
     );
   }

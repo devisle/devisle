@@ -1,11 +1,14 @@
+.Container {
+  text-align: center;
+}
+
 .Projects {
-  height: 86vh;
-  padding: 20px;
+  height: auto;
+  padding: 10px 100px;
   font-size: 1.2rem;
   text-align: left;
   display: flex;
   flex-wrap: wrap;
-  overflow-y: scroll;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
 }

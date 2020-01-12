@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import classes from "./Project.module.scss";
 import Octicon, {
   Star,
-  MarkGithub,
   Organization,
   Globe,
   Law,
@@ -37,19 +36,10 @@ class Project extends Component {
     let languagesArray = Object.keys(this.state.languages);
     return (
       <div id={this.props.id} className={classes.Project}>
-        <h3>{this.props.name.toUpperCase()}</h3>
+        <a href={this.props.github}>{this.props.name.toUpperCase()}</a>
         <p>{this.props.description}</p>
         <h4>
-          <Octicon icon={Globe} size="medium" verticalAlign="middle" />{" "}
-          Language(s):
-        </h4>
-        <ul>
-          {languagesArray.map(boom => {
-            return <li>{boom}</li>;
-          })}
-        </ul>
-        <h4>
-          <Octicon icon={Organization} size="medium" verticalAlign="middle" />{" "}
+          <Octicon icon={Organization} size="small" verticalAlign="middle" />{" "}
           Contributor(s):
         </h4>
         <ul>
@@ -67,26 +57,31 @@ class Project extends Component {
             );
           })}
         </ul>
+        <h4>
+          <Octicon icon={Globe} size="small" verticalAlign="middle" />{" "}
+          Language(s):
+        </h4>
+        <ul>
+          {languagesArray.map((language, index) => {
+            return <li key={index}>{language}</li>;
+          })}
+        </ul>
         {this.props.forks !== null ? (
-          <h5>
-            <Octicon icon={RepoForked} size="medium" verticalAlign="middle" />{" "}
-            {this.props.forks}
-          </h5>
+          <h4>
+            <Octicon icon={RepoForked} size="small" verticalAlign="middle" />{" "}
+            Fork(s): {" " + this.props.forks}
+          </h4>
         ) : null}
         <h4>
-          <Octicon icon={Star} size="medium" verticalAlign="middle" /> Star(s):{" "}
+          <Octicon icon={Star} size="small" verticalAlign="middle" /> Star(s):{" "}
           {this.props.stars}
         </h4>
         {this.props.license !== null ? (
           <h5>
-            <Octicon icon={Law} size="medium" verticalAlign="middle" />{" "}
+            <Octicon icon={Law} size="small" verticalAlign="middle" />{" "}
             {this.props.license.name}
           </h5>
         ) : null}
-        <a className={classes.Link} href={this.props.github}>
-          <Octicon icon={MarkGithub} size="medium" verticalAlign="middle" /> |
-          GitHub Repo
-        </a>
       </div>
     );
   }

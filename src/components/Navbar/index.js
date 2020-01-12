@@ -5,10 +5,6 @@ import styles from "./Navbar.module.scss";
 const Navbar = () => (
   <div className={styles.navigation}>
     <div className={styles.navigationLeft}>
-      <img
-        src="https://avatars3.githubusercontent.com/u/48589214?s=200&v=4"
-        alt="Dev Isle"
-      />
       <Link className={styles.logoLink} to="/">
         Dev Isle
       </Link>
@@ -17,23 +13,18 @@ const Navbar = () => (
       <nav>
         <ul>
           <li>
-            <NavLink to="/rules" activeStyle={{ color: "#65e0ff" }}>
-              Rules
-            </NavLink>
-          </li>
-          {/* <li>
-            <NavLink to="/contributors" activeStyle={{ color: "#65e0ff" }}>
-              Contributors
+            <NavLink to="/cli" activeStyle={{ color: "#65e0ff" }}>
+              Advance React CLI
             </NavLink>
           </li>
           <li>
-            <NavLink to="/schedule" activeStyle={{ color: "#65e0ff" }}>
-              Schedule
+            <NavLink to="/reference" activeStyle={{ color: "#65e0ff" }}>
+              Reference JS
             </NavLink>
-          </li> */}
+          </li>
           <li>
-            <NavLink to="/projects" activeStyle={{ color: "#65e0ff" }}>
-              Projects
+            <NavLink to="/simplethunk" activeStyle={{ color: "#65e0ff" }}>
+              Simple-Thunk
             </NavLink>
           </li>
         </ul>

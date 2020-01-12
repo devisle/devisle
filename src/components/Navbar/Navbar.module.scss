@@ -1,21 +1,9 @@
 .navigation {
-  padding: 0px 80px 0px 80px;
+  padding: 0px 100px;
   height: 7vh;
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  align-items: center;
-  background: #000000; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #434343,
-    #000000
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #434343,
-    #000000
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   .navigationLeft {
     display: flex;
@@ -25,17 +13,12 @@
     height: 100%;
     width: 50%;
 
-    img {
-      height: 40px;
-      width: 40px;
-    }
-
     a {
       position: relative;
       z-index: 9999;
-      color: white;
+      color: black;
+      font-family: "Roboto", sans-serif;
       text-decoration: none;
-      padding-left: 20px;
     }
   }
 
@@ -68,6 +51,7 @@
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
+    list-style: none;
 
     li {
       margin: 20px;
@@ -75,12 +59,13 @@
 
     a {
       text-decoration: none;
-      color: #fff;
+      color: black;
       cursor: pointer;
-    }
 
-    &:hover {
-      color: #65e0ff;
+      &:hover {
+        color: #0094b6;
+        border-bottom: 2px solid red;
+      }
     }
   }
 }

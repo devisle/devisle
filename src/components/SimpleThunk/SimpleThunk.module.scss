@@ -1,29 +1,33 @@
-.Rules {
-  margin: 20px 0px;
-  height: 200px;
-  padding: 0px 100px;
+.SimpleThunk {
+  height: 80vh;
+  padding: 20px 40px 40px 100px;
   font-size: 1.2rem;
   text-align: left;
+  overflow-y: scroll;
 
-  h4 {
+  h3 {
     margin-top: 20px;
     margin-bottom: 20px;
   }
 
-  p {
-    font-size: 14px;
+  h4 {
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  p  {
+    padding: 20px 0px 20px 0px;
   }
 }
 
 @media all and (min-width: 481px) and (max-width: 979px) {
-  .Rules {
+  .SimpleThunk {
     padding: 20px 40px 40px 20px;
   }
 }
 
 @media all and (max-width: 480px) {
-  .Rules {
+  .SimpleThunk {
     padding: 20px 40px 40px 20px;
-    font-size: 15px;
   }
 }

@@ -1,11 +1,10 @@
 $themeMainColour: rgb(16, 166, 204);
 
 button {
-  border: 1px solid #00000027;
   border-radius: 20px;
   background-color: #fff;
-  font-size: 1.1rem;
-  padding: 10px 0px;
+  font-size: 14px;
+  padding: 5px 0px;
 
   &:first-child {
     margin-right: 20px;
@@ -33,7 +32,7 @@ button {
     border: 1px solid #00000027;
     border-radius: 20px;
     background-color: #fff;
-    font-size: 1.0rem;
+    font-size: 1rem;
     padding: 5px 0px;
 
     a,
