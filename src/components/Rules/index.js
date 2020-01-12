@@ -5,7 +5,7 @@ const Rules = () => (
   <div className={styles.Rules}>
     <h4>Disclaimer</h4>
     <p>
-      We expect all members to participate in good faith. This means asking
+      † We expect all members to participate in good faith. This means asking
       questions that are meant to be answered, providing advice that is meant to
       be followed, and otherwise not being disingenuous. This isn’t a “no-fun”
       rule; you won’t be banned for lightheartedly trolling or joking with

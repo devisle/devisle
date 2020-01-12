@@ -13,25 +13,31 @@ class Project extends Component {
     contributors: [],
     languages: []
   };
-  contributorsArray = fetch(
-    `https://api.github.com/repos/devisle/${this.props.name}/contributors`
-  )
-    .then(res => res.json())
-    .then(data => {
-      const contributors = data;
-      this.setState({
-        contributors
-      });
-    });
 
-  languagesArray = fetch(this.props.languages)
-    .then(res => res.json())
-    .then(data => {
-      const languages = data;
-      this.setState({
-        languages
+  contributorsArray = () =>
+    fetch(
+      `https://api.github.com/repos/devisle/${this.props.name}/contributors`
+    )
+      .then(res => {
+        return res.json();
+      })
+      .then(data => {
+        const contributors = data;
+        this.setState({
+          contributors
+        });
       });
-    });
+
+  languagesArray = () =>
+    fetch(this.props.languages)
+      .then(res => res.json())
+      .then(data => {
+        const languages = data;
+        this.setState({
+          languages
+        });
+      });
+
   render() {
     let languagesArray = Object.keys(this.state.languages);
     return (

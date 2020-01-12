@@ -48,7 +48,10 @@ const main = () => (
             url={"https://github.com/devisle"}
             title={"Github Organization"}
           />
-          <Button url={"https://discord.gg/MSTQKRE"} title={"Discord Server"} />
+          <Button
+            url={"https://discord.gg/MSTQKRE"}
+            title={"† Discord Server"}
+          />
         </div>
       </section>
       <section>

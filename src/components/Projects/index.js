@@ -7,18 +7,25 @@ class project extends Component {
     projects: []
   };
 
-  appData = fetch("https://api.github.com/orgs/devisle/repos")
-    .then(res => res.json())
-    .then(data => {
-      const projects = [...data];
-      this.setState({
-        projects
-      });
-    });
+  appData = () =>
+    fetch("https://api.github.com/orgs/devisle/repos")
+      .then(res => res.json())
+      .then(data => {
+        if (Array.isArray(data)) {
+          const projects = [...data];
+          this.setState({
+            projects
+          });
+        }
+      })
+      .catch(() =>
+        this.setState({
+          projects: []
+        })
+      );
 
   render() {
-    let projectArray;
-    projectArray = this.state.projects.map(project => {
+    let projectArray = this.state.projects.map(project => {
       return project.fork === false ? (
         <Project
           key={project.id}
@@ -36,7 +43,7 @@ class project extends Component {
     });
     return (
       <div className={classes.Container}>
-        <h3>Projects</h3>
+        {this.state.projects.length > 0 ? <h3>Projects</h3> : null}
         <div className={classes.Projects}>{projectArray}</div>
       </div>
     );

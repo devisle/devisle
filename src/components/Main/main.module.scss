@@ -1,14 +1,12 @@
 $themeMainColour: rgb(16, 166, 204);
 
 .Container {
-  position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   text-align: left;
   top: 0;
   left: 0;
-  width: 100%;
   height: auto;
 
   .Waves {
@@ -19,7 +17,7 @@ $themeMainColour: rgb(16, 166, 204);
   .Banner {
     display: flex;
     flex-direction: row;
-    width: 100%;
+
     background: #e7fcfd;
     padding: 100px 100px;
     height: 400px;
@@ -64,84 +62,71 @@ $themeMainColour: rgb(16, 166, 204);
   }
 }
 
-@media all and (min-width: 481px) and (max-width: 979px) {
+@media all and (min-width: 481px) and (max-width: 768px) {
   .Container {
-    padding: 40px;
-    flex-direction: column;
+    height: 100vh;
 
-    section {
+    .Waves {
       width: 100%;
-
-      iframe {
-        height: 250px;
-        width: 100%;
-        margin-left: 0px;
-      }
+      height: 100px;
     }
 
-    .Links {
-      margin-bottom: 20px;
+    .Banner {
+      padding: 50px 25px;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
 
-      button {
+      .Title {
+        font-size: 14px;
+      }
+
+      .Subtitle {
         font-size: 12px;
-        height: 30px;
       }
-    }
 
-    h1 {
-      font-size: 2.5rem;
-    }
-
-    h2 {
-      font-size: 1.4rem;
-      margin-bottom: 10px;
-    }
-
-    p {
-      font-size: 1.1rem;
-      width: 100%;
+      p {
+        font-size: 12px;
+      }
     }
   }
 }
 
 @media all and (max-width: 480px) {
   .Container {
-    flex-direction: column;
-    padding: 20px;
-
-    section {
+    .Waves {
       width: 100%;
+      height: 50px;
+    }
 
-      iframe {
-        height: 150px;
+    .Banner {
+      flex-direction: column;
+      padding: 0;
+
+      section {
         width: 100%;
-        margin-left: 0px;
+        padding: 50px 25px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        height: auto;
+
+        &:last-child {
+          display: none;
+        }
       }
-    }
 
-    .Links {
-      font-size: 10px;
-      margin-bottom: 10px;
-
-      button {
-        font-size: 10px;
-        height: 30px;
+      .Title {
+        font-size: 14px;
       }
-    }
 
-    h1 {
-      font-size: 1.5rem;
-      text-align: center;
-    }
+      .Subtitle {
+        font-size: 12px;
+      }
 
-    h2 {
-      font-size: 0.8rem;
-      margin-bottom: 10px;
-    }
-
-    p {
-      font-size: 0.7rem;
-      width: 100%;
+      p {
+        font-size: 12px;
+      }
     }
   }
 }
