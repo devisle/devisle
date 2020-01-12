@@ -17,10 +17,9 @@ $themeMainColour: rgb(16, 166, 204);
   .Banner {
     display: flex;
     flex-direction: row;
-
     background: #e7fcfd;
     padding: 100px 100px;
-    height: 400px;
+    height: auto;
 
     section {
       display: flex;
@@ -76,6 +75,7 @@ $themeMainColour: rgb(16, 166, 204);
       -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
       box-sizing: border-box;
+      height: auto;
 
       .Title {
         font-size: 14px;
