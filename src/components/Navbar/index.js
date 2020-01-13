@@ -1,12 +1,13 @@
 import React from "react";
 import { NavLink, Link } from "react-router-dom";
+import logo from "./logo.png";
 import styles from "./Navbar.module.scss";
 
 const Navbar = () => (
   <div className={styles.navigation}>
     <div className={styles.navigationLeft}>
       <Link className={styles.logoLink} to="/">
-        Dev Isle
+        <img src={logo} alt="dev isle logo" />
       </Link>
     </div>
     <div className={styles.navigationRight}>

@@ -12,6 +12,22 @@
     height: 100%;
     width: 50%;
 
+    .logoLink {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+
+      img {
+        position: relative;
+        left: -20px;
+        width: 130px !important;
+        height: 30px !important;
+        border: none;
+      }
+
+      border: none;
+    }
+
     a {
       position: relative;
       z-index: 9999;

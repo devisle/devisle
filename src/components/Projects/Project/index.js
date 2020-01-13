@@ -14,6 +14,11 @@ class Project extends Component {
     languages: []
   };
 
+  componentDidMount = () => {
+    this.contributorsArray();
+    this.languagesArray();
+  };
+
   contributorsArray = () =>
     fetch(
       `https://api.github.com/repos/devisle/${this.props.name}/contributors`
@@ -49,19 +54,20 @@ class Project extends Component {
           Contributor(s):
         </h4>
         <ul>
-          {this.state.contributors.map(contributor => {
-            return (
-              <li key={contributor.login}>
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href={`https://www.github.com/${contributor.login}`}
-                >
-                  {contributor.login}
-                </a>
-              </li>
-            );
-          })}
+          {this.state.contributors &&
+            this.state.contributors.map(contributor => {
+              return (
+                <li key={contributor.login}>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href={`https://www.github.com/${contributor.login}`}
+                  >
+                    {contributor.login}
+                  </a>
+                </li>
+              );
+            })}
         </ul>
         <h4>
           <Octicon icon={Globe} size="small" verticalAlign="middle" />{" "}

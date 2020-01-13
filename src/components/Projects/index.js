@@ -7,10 +7,15 @@ class project extends Component {
     projects: []
   };
 
+  componentDidMount = () => {
+    this.appData();
+  };
+
   appData = () =>
     fetch("https://api.github.com/orgs/devisle/repos")
       .then(res => res.json())
       .then(data => {
+        console.log(data);
         if (Array.isArray(data)) {
           const projects = [...data];
           this.setState({
