@@ -1,25 +1,37 @@
 .Container {
-}
-
-.Reference {
-  height: 80vh;
-  padding: 20px 40px 40px 100px;
-  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   text-align: left;
-  overflow-y: scroll;
+  top: 0;
+  left: 0;
+  height: auto;
 
-  h3 {
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
+  .Reference {
+    height: 80vh;
+    padding: 20px 40px 40px 100px;
+    font-size: 1.2rem;
+    text-align: left;
 
-  h4 {
-    margin-bottom: 20px;
-    margin-top: 20px;
-  }
+    pre {
+      background: #e7fcfd1a;
+      padding: 20px;
+      font-size: 12px;
+    }
 
-  p  {
-    padding: 20px 0px 20px 0px;
+    h3 {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    h4 {
+      margin-bottom: 20px;
+      margin-top: 20px;
+    }
+
+    span {
+      font-size: 14px;
+    }
   }
 }
 
