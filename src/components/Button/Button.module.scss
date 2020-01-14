@@ -27,6 +27,26 @@ button {
   }
 }
 
+.customButton  {
+  border: 1px solid rgba(0,0,0,.15);
+  background-color: #fff;
+  border-radius: 20px;
+  font-size: 14px;
+  padding: 5px 40px;
+  text-decoration: none;
+  color: black;
+  
+
+  &:first-child {
+    margin-right: 20px;
+  }
+
+  &:hover{
+    color: #fff;
+    background: $themeMainColour;
+  }
+}
+
 @media all and (min-width: 481px) and (max-width: 979px) {
   button {
     border: 1px solid #00000027;
@@ -39,6 +59,9 @@ button {
     a:active {
       padding: 20px 40px;
     }
+  }
+  .customButton {
+    font-size: 10px;
   }
 }
 
@@ -54,5 +77,9 @@ button {
     a:active {
       padding: 10px 20px;
     }
+  }
+
+  .customButton {
+    padding: 10px;
   }
 }
