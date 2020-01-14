@@ -28,7 +28,7 @@
       margin-bottom: 20px;
       margin-top: 20px;
     }
-
+    //////
     span {
       font-size: 14px;
     }
@@ -37,12 +37,20 @@
 
 @media all and (min-width: 481px) and (max-width: 979px) {
   .Reference {
-    padding: 20px 40px 40px 20px;
+    height: auto;
+    padding: 20px 20px;
+    font-size: 1.2rem;
+    text-align: left;
+    width: 100%;
   }
 }
 
 @media all and (max-width: 480px) {
   .Reference {
-    padding: 20px 40px 40px 20px;
+    height: auto;
+    padding: 20px 20px;
+    font-size: 1.2rem;
+    text-align: left;
+    width: 100%;
   }
 }
