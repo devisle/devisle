@@ -1,8 +1,39 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "../Navbar";
+import { jsonToBibtex } from "@devisle/reference-js";
 import styles from "./Reference.module.scss";
 
+const content = {
+  references: [
+    {
+      type: "ARTICLE",
+      key: "smit54",
+      AUTHOR: "J. G. Smith and H. K. Weston",
+      TITLE: "Nothing Particular in this Years History",
+      YEAR: "1954",
+      JOURNAL: "J. Geophys. Res.",
+      VOLUME: "2",
+      PAGES: "14-15"
+    },
+    {
+      type: "BOOK",
+      key: "colu92",
+      AUTHOR: "Christopher Columbus",
+      TITLE: "How I Discovered America",
+      YEAR: "1492",
+      PUBLISHER: "Hispanic Press",
+      ADDRESS: "Barcelona"
+    }
+  ]
+};
+
 const Reference = () => {
+  useEffect(() => {
+    jsonToBibtex(JSON.stringify(content), "references")
+      .then(data => console.log(data))
+      .catch(error => console.log(error));
+  }, []);
+
   return (
     <div className={styles.Container}>
       <Navbar />
@@ -19,8 +50,9 @@ const Reference = () => {
         </pre>
         <h4>Bibtex to JSON</h4>
         <span>
-          Simply pass in your .bib file's content into the function, it returns
-          a promise, so you are able to handle the results or errors like so:
+          Simply pass in your .bib file's content into the function as a string,
+          it returns a promise, so you are able to handle the results or errors
+          like so:
         </span>
         <pre>
           <code>
@@ -34,8 +66,7 @@ const Reference = () => {
             <br />
           </code>
         </pre>
-
-        <h4>JSON to Bibtex</h4>
+        <br />
         <span>The bibtexToJSON function outputs JSON like the one below:</span>
         <br />
         <pre>
@@ -68,16 +99,43 @@ const Reference = () => {
           </code>
         </pre>
         <br />
+        <h4>JSON to Bibtex</h4>
         <span>
-          This same JSON file you can pass into the function, we also specify
-          the array of objects property as a string in the object like below:
+          This same JSON file you can pass into the function as a string, we
+          also specify the array of objects property as a string in the object
+          like below:
         </span>
         <pre>
           <code>
             {`const { jsonToBibtex } = require("@devisle/reference-js");`}
             <br />
             <br />
-            {`jsonToBibtex(content, "references")
+            {`const content = {
+  references: [
+    {
+      type: "ARTICLE",
+      key: "smit54",
+      AUTHOR: "J. G. Smith and H. K. Weston",
+      TITLE: "Nothing Particular in this Years History",
+      YEAR: "1954",
+      JOURNAL: "J. Geophys. Res.",
+      VOLUME: "2",
+      PAGES: "14-15"
+    },
+    {
+      type: "BOOK",
+      key: "colu92",
+      AUTHOR: "Christopher Columbus",
+      TITLE: "How I Discovered America",
+      YEAR: "1492",
+      PUBLISHER: "Hispanic Press",
+      ADDRESS: "Barcelona"
+    }
+  ]
+};`}
+            <br />
+            <br />
+            {`jsonToBibtex(JSON.stringify(content), "references")
   .then((data) => console.log(data))
   .catch((error) => console.log(error));
             `}
