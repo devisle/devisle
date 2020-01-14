@@ -28,7 +28,16 @@
       margin-bottom: 20px;
       margin-top: 20px;
     }
-    //////
+
+    iframe {
+      width: 90%;
+      height: 500px;
+
+      &:last-child {
+        margin-bottom: 50px;
+      }
+    }
+
     span {
       font-size: 14px;
     }
