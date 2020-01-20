@@ -1,6 +1,14 @@
+.Container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+  top: 0;
+  left: 0;
+  height: auto;
+
 .CLI {
   height: 80vh;
-  padding: 20px 40px 40px 100px;
   font-size: 1.2rem;
   text-align: left;
   overflow-y: scroll;
@@ -17,17 +25,57 @@
 
   p  {
     padding: 20px 0px 20px 0px;
+    }
   }
 }
 
-@media all and (min-width: 481px) and (max-width: 979px) {
+@media (max-width: 979px) {
   .CLI {
     padding: 20px 40px 40px 20px;
   }
+  pre {
+    background: #e7fcfd1a;
+    padding: 10px;
+    font-size: 14px;
+  }
+  li {
+    font-size: 15px;
+  }
+  span {
+    font-size: 15px;
+  }
 }
 
-@media all and (max-width: 480px) {
+@media (min-width: 980px) {
+  .CLI {
+    padding: 20px 40px 40px 100px;
+  }
+  pre {
+    background: #e7fcfd1a;
+    padding: 10px;
+    font-size: 14px;
+  }
+  span {
+    font-size: 16px;
+  }
+  li {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
   .CLI {
     padding: 20px 40px 40px 20px;
+  }
+  pre {
+    background: #e7fcfd1a;
+    padding: 10px;
+    font-size: 13px;
+  }
+  span {
+    font-size: 14px;
+  }
+  li {
+    font-size: 14px;
   }
 }
