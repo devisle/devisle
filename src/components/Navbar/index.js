@@ -14,9 +14,9 @@ const Navbar = () => (
       <nav>
         <ul>
           <li>
-            <NavLink to="/cli" activeStyle={{ color: "#65e0ff" }}>
+            <a href="https://advanced-react-cli.netlify.app/" activeStyle={{ color: "#65e0ff" }}>
               Advanced React CLI
-            </NavLink>
+            </a>
           </li>
           <li>
             <NavLink to="/reference" activeStyle={{ color: "#65e0ff" }}>
