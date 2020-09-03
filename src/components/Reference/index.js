@@ -47,7 +47,7 @@ const Reference = () => {
           (For now), and in the future EndNote, XML files and more. <br />Use npm to
           install:
         </p>
-        <Highlight className='sh'>{`npm install @devisle/reference-js`}</Highlight>
+        <Highlight>{`npm install @devisle/reference-js`}</Highlight>
         <h2>Bibtex to JSON</h2>
         <p>
           Simply pass in your .bib file's content into the function as a string,
