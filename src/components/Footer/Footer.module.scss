@@ -19,7 +19,7 @@
     color: black;
     padding: 0px 100px;
     height: 100%;
-    font-size: 10px;
+    font-size: 18px;
 
     a {
       i {
@@ -36,6 +36,24 @@
   }
 }
 
+@media all and (max-width: 1180px) {
+  .Footer {
+    section {
+      font-size: 14px;
+      padding: 0px 50px;
+    }
+  }
+}
+
+@media all and (max-width: 895px) {
+  .Footer {
+    section {
+      font-size: 14px;
+      padding: 0px 50px;
+    }
+  }
+}
+
 @media all and (min-width: 481px) and (max-width: 768px) {
   .Footer {
     section {
@@ -43,10 +61,8 @@
       flex-direction: row;
       justify-content: center;
       align-items: center;
-      width: 50%;
       padding: 0;
       margin: 0;
-      font-size: 18px;
 
       .Heart {
         padding: 0px 2px 0px 5px;
@@ -55,16 +71,14 @@
       a {
         i {
           height: 20px;
-          width: 20px;
-          margin: 0 20px;
-          color: white;
+          margin: 0 10px;
         }
       }
     }
 
     span {
       &:first-child {
-        padding-left: 40px;
+        padding-left: 10px;
       }
     }
   }
@@ -77,10 +91,9 @@
       flex-direction: row;
       justify-content: center;
       align-items: center;
-      width: 50%;
       padding: 0;
       margin: 0;
-      font-size: 8px;
+      font-size: 11px;
 
       .Heart {
         padding: 0px 2px 0px 5px;
@@ -98,7 +111,7 @@
 
     span {
       &:first-child {
-        padding-left: 20px;
+        padding-left: 10px;
       }
     }
   }

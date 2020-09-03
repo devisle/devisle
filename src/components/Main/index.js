@@ -23,13 +23,13 @@ const main = () => (
     <Navbar />
     <div className={styles.Banner}>
       <section>
-        <span className={styles.Title}>
+        <h1 className={styles.Title}>
           Friendly open source community & <br />
           useful ecosystem packages
-        </span>
-        <span className={styles.Subtitle}>
+        </h1>
+        <p className={styles.Subtitle}>
           Paving the way for straight forward open source contributions.
-        </span>
+        </p>
         <p>
           We’re a community of developers using Javascript, Python and other
           languages who want to contribute to open source content and improve

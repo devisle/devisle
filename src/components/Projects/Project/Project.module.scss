@@ -59,15 +59,24 @@ $themeMainColourDarker: rgb(8, 87, 107);
   }
 }
 
+@media all and (max-width: 1180px) {
+  .Project {
+    width: 40%;
+    font-size: 14px;
+  }
+}
+
 @media all and (min-width: 481px) and (max-width: 979px) {
   .Project {
-    padding: 20px 40px;
+    padding: 10px 20px;
+    width: 100%;
   }
 }
 
 @media all and (max-width: 480px) {
   .Project {
-    padding: 20px 40px;
-    font-size: 1rem;
+    padding: 10px 10px;
+    font-size: 12px;
+    width: 100%;
   }
 }

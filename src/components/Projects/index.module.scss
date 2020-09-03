@@ -12,3 +12,19 @@
   flex-direction: row;
   justify-content: space-between;
 }
+
+h2 {
+  font-size: 20px;
+}
+
+@media all and (max-width: 1180px) {
+  .Projects {
+    padding: 10px 50px;
+  }
+}
+
+@media all and (max-width: 800px) {
+  .Projects {
+    padding: 10px 10px;
+  }
+}

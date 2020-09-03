@@ -9,24 +9,34 @@
 
   .Reference {
     height: 80vh;
-    padding: 20px 40px 40px 100px;
+    width: auto;
+    padding: 20px 100px 40px 100px;
     font-size: 1.2rem;
     text-align: left;
 
     pre {
-      background: #e7fcfd1a;
-      padding: 20px;
       font-size: 12px;
+      border: 1px solid #000;
+    }
+
+    h1 {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      font-size: 30px;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      margin-top: 20px;
+      font-size: 20px;
     }
 
     h3 {
-      margin-top: 20px;
-      margin-bottom: 20px;
+      font-size: 17px;
     }
 
     h4 {
-      margin-bottom: 20px;
-      margin-top: 20px;
+      font-size: 20px;
     }
 
     iframe {
@@ -38,28 +48,79 @@
       }
     }
 
-    span {
+    p {
+      font-size: 14px;
+    }
+
+    code {
       font-size: 14px;
     }
   }
 }
 
-@media all and (min-width: 481px) and (max-width: 979px) {
-  .Reference {
-    height: auto;
-    padding: 20px 20px;
-    font-size: 1.2rem;
-    text-align: left;
-    width: 100%;
+@media all and (max-width: 950px) {
+  .Container {
+    .Reference {
+      height: auto;
+      padding: 20px 50px;
+      font-size: 1.2rem;
+      text-align: left;
+
+      pre {
+        width: auto;
+      }
+
+      code {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 800px) {
+  .Container {
+    .Reference {
+      padding: 20px 10px;
+    }
   }
 }
 
 @media all and (max-width: 480px) {
-  .Reference {
-    height: auto;
-    padding: 20px 20px;
-    font-size: 1.2rem;
-    text-align: left;
-    width: 100%;
+  .Container {
+    .Reference {
+      height: auto;
+      padding: 20px 10px;
+      font-size: 1.2rem;
+      text-align: left;
+      width: 96%;
+
+      h1 {
+        font-size: 22px;
+      }
+
+      h2 {
+        font-size: 18px;
+      }
+
+      h3 {
+        font-size: 14px;
+      }
+
+      h4 {
+        font-size: 17px;
+      }
+
+      p {
+        font-size: 12px;
+      }
+
+      code {
+        font-size: 10px;
+      }
+
+      pre {
+        width: 98%;
+      }
+    }
   }
 }

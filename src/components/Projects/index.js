@@ -48,7 +48,7 @@ class project extends Component {
     });
     return (
       <div className={classes.Container}>
-        {this.state.projects.length > 0 ? <h3>Projects</h3> : null}
+        {this.state.projects.length > 0 ? <h2>Projects</h2> : null}
         <div className={classes.Projects}>{projectArray}</div>
       </div>
     );
