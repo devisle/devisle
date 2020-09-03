@@ -85,9 +85,15 @@
   }
 }
 
-@media all and (min-width: 481px) and (max-width: 768px) {
+@media all and (max-width: 950px) {
   .navigation {
-    padding: 0;
+    padding: 0 50px;
+  }
+}
+
+@media all and (min-width: 481px) and (max-width: 800px) {
+  .navigation {
+    padding: 0 10px;
   }
 }
 
@@ -111,8 +117,8 @@
         ul {
           li {
             width: auto;
-            font-size: 8px;
-            margin: 0px 10px;
+            font-size: 10px;
+            margin: 0px 5px;
           }
         }
       }

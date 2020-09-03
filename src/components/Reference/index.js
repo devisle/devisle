@@ -1,5 +1,7 @@
 import React, { useEffect } from "react";
 import Navbar from "../Navbar";
+import Highlight from 'react-highlight';
+import "../../../node_modules/highlight.js/styles/mono-blue.css";
 import { jsonToBibtex } from "@devisle/reference-js";
 import styles from "./Reference.module.scss";
 
@@ -38,69 +40,58 @@ const Reference = () => {
     <div className={styles.Container}>
       <Navbar />
       <div className={styles.Reference}>
-        <h2>Reference JS</h2>
-        <span>
+        <h1>Reference JS</h1>
+        <p>
           Reference JS is a collection of parsing functions for Clients and Node
           JS that allow you to import, export and convert between BibTeX, JSON
-          (For now), and in the future EndNote, XML files and more. Use npm to
+          (For now), and in the future EndNote, XML files and more. <br />Use npm to
           install:
-        </span>
-        <pre>
-          <code>{`npm install @devisle/reference-js`}</code>
-        </pre>
-        <h4>Bibtex to JSON</h4>
-        <span>
+        </p>
+        <Highlight className='sh'>{`npm install @devisle/reference-js`}</Highlight>
+        <h2>Bibtex to JSON</h2>
+        <p>
           Simply pass in your .bib file's content into the function as a string,
           it returns a promise, so you are able to handle the results or errors
           like so:
-        </span>
-        <pre>
-          <code>
+        </p>
+        <Highlight className='js'>
             {`const { bibtexToJSON } = require("@devisle/reference-js");`}
             <br />
             <br />
             {`bibtexToJSON(content)
   .then((data) => console.log(data))
-  .catch((error) => console.log(error));
-            `}
-            <br />
-          </code>
-        </pre>
+  .catch((error) => console.log(error));`}
+        </Highlight>
         <br />
-        <span>The bibtexToJSON function outputs JSON like the one below:</span>
-        <br />
-        <pre>
-          <code>
-            {`
-{
+        <p>The bibtexToJSON function outputs JSON like the one below:</p>
+        <Highlight className='json'>
+            {`{
   "total": 3,
   "references": [
       {
-          "type": "article",
-          "key": "smit54",
-          "title": "Nothing Particular in this Years History",
-          "author": "J. G. Smith and H. K. Weston",
-          "year": "1954",
-          "journal": "J. Geophys. Res.",
-          "volume": "2",
-          "pages": "14-15"
+        "type": "article",
+        "key": "smit54",
+        "title": "Nothing Particular in this Years History",
+        "author": "J. G. Smith and H. K. Weston",
+        "year": "1954",
+        "journal": "J. Geophys. Res.",
+        "volume": "2",
+        "pages": "14-15"
       },
       {
-          "type": "book",
-          "key": "colu92",
-          "title": "How I Discovered America",
-          "author": "Christopher Columbus",
-          "year": "1492",
-          "publisher": "Hispanic Press",
-          "address": "Barcelona"
+        "type": "book",
+        "key": "colu92",
+        "title": "How I Discovered America",
+        "author": "Christopher Columbus",
+        "year": "1492",
+        "publisher": "Hispanic Press",
+        "address": "Barcelona"
       }
-  ]
-} 
-            `}
-          </code>
-        </pre>
+   ]
+}`}
+        </Highlight>
         <br />
-        <h5>Demo</h5>
+        <h3>Demo</h3>
         <iframe
           src="https://codesandbox.io/embed/confident-http-zdbhf?fontsize=14&hidenavigation=1&theme=dark"
           styles="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
@@ -111,13 +102,12 @@ const Reference = () => {
         <br />
         <br />
         <h4>JSON to Bibtex</h4>
-        <span>
+        <p>
           This same JSON file you can pass into the function as a string, we
           also specify the array of objects property as a string in the object
           like below:
-        </span>
-        <pre>
-          <code>
+        </p>
+        <Highlight className='js'>
             {`const { jsonToBibtex } = require("@devisle/reference-js");`}
             <br />
             <br />
@@ -151,10 +141,9 @@ const Reference = () => {
   .catch((error) => console.log(error));
             `}
             <br />
-          </code>
-        </pre>
+        </Highlight>
         <br />
-        <h5>Demo</h5>
+        <h3>Demo</h3>
         <iframe
           src="https://codesandbox.io/embed/adoring-yalow-2r1dw?autoresize=1&fontsize=14&hidenavigation=1&theme=dark"
           styles="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"

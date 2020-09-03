@@ -35,7 +35,7 @@ button {
   padding: 5px 40px;
   text-decoration: none;
   color: black;
-  
+
 
   &:first-child {
     margin-right: 20px;
@@ -52,7 +52,7 @@ button {
     border: 1px solid #00000027;
     border-radius: 20px;
     background-color: #fff;
-    font-size: 10px;
+    font-size: 12px;
     padding: 5px 0px;
 
     a,
@@ -61,7 +61,7 @@ button {
     }
   }
   .customButton {
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 
@@ -72,6 +72,7 @@ button {
     background-color: #fff;
     padding: 5px 0px;
     font-size: 10px;
+    width: 100%;
 
     a,
     a:active {
@@ -80,6 +81,7 @@ button {
   }
 
   .customButton {
-    padding: 10px;
+    font-size: 10px;
+    padding: 8px;
   }
 }

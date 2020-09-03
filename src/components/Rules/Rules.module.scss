@@ -2,42 +2,60 @@
   margin: 20px 0px;
   height: 200px;
   padding: 0px 100px;
-  font-size: 1.2rem;
+  font-size: 25px;
   text-align: left;
 
-  h4 {
+  h3 {
     margin-top: 20px;
     margin-bottom: 20px;
   }
 
   p {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
-@media all and (min-width: 481px) and (max-width: 768px) {
+@media all and (max-width: 1180px) {
   .Rules {
     padding: 0px 50px;
-    font-size: 10px;
+
+    p {
+      font-size: 14px;
+    }
+  }
+}
+
+@media all and (min-width: 481px) and (max-width: 800px) {
+  .Rules {
+    font-size: 12px;
     width: 100%;
+    padding: 0px 10px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     height: auto;
+
+    h3 {
+      font-size: 20px;
+    }
   }
 }
 
 @media all and (max-width: 480px) {
   .Rules {
-    padding: 0px 50px;
+    padding: 0px 10px;
     width: 100%;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     height: auto;
 
+    h3 {
+      font-size: 18px;
+    }
+
     p {
-      font-size: 10px;
+      font-size: 11px;
     }
   }
 }
