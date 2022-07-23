@@ -6,7 +6,7 @@
   "dependencies": {
     "@devisle/reference-js": "^1.0.2",
     "@primer/octicons-react": "^9.1.1",
-    "node-sass": "^4.12.0",
+    "node-sass": "^7.0.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-highlight": "^0.12.0",
